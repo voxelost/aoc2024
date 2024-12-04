@@ -18,7 +18,7 @@ func TestPartOne(t *testing.T) {
 }
 
 func TestPartTwo(t *testing.T) {
-	input, err := internal.ReadFileAsString("data/input.txt")
+	input, err := internal.ReadFileAsString("data/test_input.txt")
 	assert.NoError(t, err)
 
 	res, err := day04.PartTwo(input)
