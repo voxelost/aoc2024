@@ -1,4 +1,4 @@
-package day06
+package day_06
 
 import (
 	"fmt"
@@ -292,7 +292,6 @@ func PartTwo(input string) (int, error) {
 		wouldCycle := mc.RunUntilCycle()
 		if wouldCycle {
 			// mc.DebugPrint()
-			fmt.Printf("found obstacle at %v\n", mc.Obstacle)
 			validObstacles[mc.Obstacle] = struct{}{}
 		}
 		m.Visit(nextVisit)
